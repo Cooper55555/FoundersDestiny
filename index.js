@@ -1,18 +1,7 @@
 const cards = [
-    { name: '1/75', image: 'Custom Pokemon Set/1.png', description: '' },
-    { name: '61/75', image: 'Custom Pokemon Set/61.png', description: '' },
-    { name: '63/75', image: 'Custom Pokemon Set/63.png', description: '' },
-    { name: '64/75', image: 'Custom Pokemon Set/64.png', description: '' },
-    { name: '71/75', image: 'Custom Pokemon Set/71.png', description: '' },
-    { name: '72/75', image: 'Custom Pokemon Set/72.png', description: '' },
-    { name: '73/75', image: 'Custom Pokemon Set/73.png', description: '' },
-    { name: '76/75', image: 'Custom Pokemon Set/76.png', description: '' },
-    { name: '77/75', image: 'Custom Pokemon Set/77.png', description: '' },
-    { name: '78/75', image: 'Custom Pokemon Set/78.png', description: '' },
-    { name: '80/75', image: 'Custom Pokemon Set/80.png', description: '' },
-    { name: '98/75', image: 'Custom Pokemon Set/98.png', description: '' },
-    { name: '99/75', image: 'Custom Pokemon Set/99.png', description: '' },
-    { name: '100/75', image: 'Custom Pokemon Set/100.png', description: '' },
+    { name: '11/100', image: 'Pokemon set/11.png', description: '' },
+    { name: '12/100', image: 'Pokemon set/12.png', description: '' },
+    { name: '13/100', image: 'Pokemon set/13.png', description: '' },
 ];
 
 function displayCards() {
