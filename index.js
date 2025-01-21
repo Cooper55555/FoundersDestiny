@@ -1,8 +1,7 @@
 const cards = [
-    { name: '11/100', image: 'Pokemon set/11.png', description: '' },
-    { name: '12/100', image: 'Pokemon set/12.png', description: '' },
-    { name: '13/100', image: 'Pokemon set/13.png', description: '' },
-    { name: '21/100', image: 'Pokemon set/21.png', description: '' },
+    { name: '01/120', image: 'Pokemon set/1.png', description: 'Treecko' },
+    { name: '13/120', image: 'Pokemon set/13.png', description: 'Blaziken' },
+    { name: '21/120', image: 'Pokemon set/21.png', description: 'Piplup' },
 ];
 
 function displayCards() {
