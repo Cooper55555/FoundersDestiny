@@ -2,6 +2,7 @@ const cards = [
     { name: '11/100', image: 'Pokemon set/11.png', description: '' },
     { name: '12/100', image: 'Pokemon set/12.png', description: '' },
     { name: '13/100', image: 'Pokemon set/13.png', description: '' },
+    { name: '21/100', image: 'Pokemon set/21.png', description: '' },
 ];
 
 function displayCards() {
