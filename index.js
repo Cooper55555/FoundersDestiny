@@ -8,7 +8,6 @@ const cards = [
     { name: '07/120', image: 'Pokemon set/7.png', description: 'Sunflora' },
     { name: '08/120', image: 'Pokemon set/8.png', description: 'Tangela' },
     { name: '09/120', image: 'Pokemon set/9.png', description: 'Tangrowth' },
-    { name: '10/120', image: 'Pokemon set/10.png', description: 'Leafeon' },
     { name: '11/120', image: 'Pokemon set/11.png', description: 'Torchic' },
     { name: '12/120', image: 'Pokemon set/12.png', description: 'Combusken' },
     { name: '13/120', image: 'Pokemon set/13.png', description: 'Blaziken' },
@@ -30,12 +29,36 @@ function displayCards() {
         const cardElement = document.createElement('div');
         cardElement.className = 'card';
         cardElement.innerHTML = `
+            <div class="progress-bar-container">
+                <input type="checkbox" onclick="updateGlobalProgress()">
+            </div>
             <img src="${card.image}" alt="${card.name}" onclick="openModal('${card.image}', '${card.name}')">
             <h2>${card.name}</h2>
             <p>${card.description}</p>
         `;
         cardGrid.appendChild(cardElement);
     });
+}
+
+function updateGlobalProgress() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const checkedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
+    const totalCount = checkboxes.length;
+
+    const globalProgressBar = document.getElementById('globalProgressBar');
+    const progressPercentage = (checkedCount / totalCount) * 100;
+
+    // Correctly format this line:
+    globalProgressBar.style.width = progressPercentage + '%'; // Ensure proper concatenation
+}
+
+function initializeGlobalProgressBar() {
+    const progressContainer = document.getElementById('progress-container');
+    progressContainer.innerHTML = `
+        <div class="global-progress-container">
+            <div class="global-progress-bar" id="globalProgressBar"></div>
+        </div>
+    `;
 }
 
 function openModal(imageSrc, altText) {
@@ -52,4 +75,6 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+// Set up the initial progress bar and display the cards
 displayCards();
+initializeGlobalProgressBar();

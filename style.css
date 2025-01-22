@@ -99,3 +99,35 @@ h1 {
         font-size: 70px;
     }
 }
+
+.progress-bar-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #4caf50;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.global-progress-container {
+    background-color: #f3f3f3;
+    border: 5px solid #333;
+    margin: auto;
+    width: 88vw;
+}
+
+.global-progress-bar {
+    height: 20px;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 0.3s;
+}
