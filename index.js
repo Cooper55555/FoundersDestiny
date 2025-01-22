@@ -15,6 +15,7 @@ const cards = [
     { name: '14/120', image: 'Pokemon set/14.png', description: 'Numel' },
     { name: '15/120', image: 'Pokemon set/15.png', description: 'Camerupt' },
     { name: '21/120', image: 'Pokemon set/21.png', description: 'Piplup' },
+    { name: '22/120', image: 'Pokemon set/22.png', description: 'Prinplup' },
     { name: '49/120', image: 'Pokemon set/49.png', description: 'Heracross' },
     { name: '50/120', image: 'Pokemon set/50.png', description: 'Croagunk' },
     { name: '51/120', image: 'Pokemon set/51.png', description: 'Toxicroak' },
