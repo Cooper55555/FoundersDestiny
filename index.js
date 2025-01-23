@@ -75,6 +75,42 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-// Set up the initial progress bar and display the cards
 displayCards();
 initializeGlobalProgressBar();
+
+function closeModal() {
+    document.getElementById('modal').style.display = "none";
+}
+
+function openNav() {
+    document.getElementById("sidenav").style.left = "0";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.left = "-250px";
+}
+
+window.onclick = function(event) {
+    var modal = document.getElementById('modal');
+    if (event.target == modal) {
+        closeModal();
+    }
+};
+
+function home() {
+    document.getElementById("main").style.display = "block";
+    document.getElementById("main2").style.display = "none";
+    document.getElementById("main3").style.display = "none";
+}
+
+function info() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("main2").style.display = "block";
+    document.getElementById("main3").style.display = "none";
+}
+
+function collection() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("main2").style.display = "none";
+    document.getElementById("main3").style.display = "block";
+}

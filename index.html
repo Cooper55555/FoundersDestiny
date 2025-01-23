@@ -8,25 +8,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <br>
-    <br>
-    <br>
-    <div id="progress-container"></div>
-    <div class="container">
-        <h1>Founders Destiny</h1>
-        <div class="card-grid" id="cardGrid">
-            <!-- Card elements will be injected here by JavaScript -->
+    <div class="topnav">
+        <span class="open-btn" onclick="openNav()">&#9776; Open Sidenav</span>
+        <a href="#home" onclick="home()">Home</a>
+        <a href="#info" onclick="info()">Info</a>
+        <a href="#collection" onclick="collection()">Collection</a>
+    </div>
+    
+    <div class="sidenav" id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="#top10cards" class="sidenavText">Top 10 Cards</a>
+    </div>
+    
+    <div class="main" id="main">
+        <br>
+        <br>
+        <br>
+        <div id="progress-container"></div>
+        <div class="container">
+            <h1>Founders Destiny</h1>
+            <div class="card-grid" id="cardGrid">
+                <!-- Card elements will be injected here by JavaScript -->
+            </div>
+        </div>
+        <div class="modal" id="modal" onclick="closeModal()">
+            <span class="close" id="close">&times;</span>
+            <img class="modal-content" id="modalImg" alt="Pokemon">
+            <div id="caption"></div>
         </div>
     </div>
-    <div class="modal" id="modal" onclick="closeModal()">
-        <span class="close" id="close">&times;</span>
-        <img class="modal-content" id="modalImg" alt="Pokemon">
-        <div id="caption"></div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
+    <div class="main2" id="main2" hidden>
+        <section class="content">
+            <h2>What Is Founders Destiny?</h2>
+            <p>"Founders Destiny" is an engaging card set that celebrates the beloved Pokémon from Generations 1 through 4, capturing the nostalgia and charm of the franchise's early years. This set showcases iconic Pokémon, legendary figures, and fan-favorite trainers, all beautifully illustrated with unique artwork that pays homage to their origins. Each card features special abilities and strategies, encouraging players to build decks that reflect their favorite characters and moments from the series. With a blend of classic designs and new mechanics, "Founders Destiny" invites both seasoned collectors and newcomers to explore the rich history of Pokémon battling and trading card games. Collectors can look forward to rare holographic cards and exclusive artwork that enhance gameplay and display appeal, making it a must-have for any Pokémon enthusiast.</p>
+        </section>
     </div>
     <script src="index.js"></script>
 </body>
